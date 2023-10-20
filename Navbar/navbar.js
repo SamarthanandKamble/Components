@@ -14,7 +14,9 @@ function expandDropdown() {
       flag = false;
     } else {
       dropdownMenuOne.style.display = "none";
+      expandDropdownTwo();
       dropdownMenuTwo.style.display = "none";
+      expandDropdownThree();
       dropdownMenuThree.style.display = "none";
       flag = true;
     }
@@ -30,6 +32,7 @@ function expandDropdownTwo() {
       drop2 = false;
     } else {
       dropdownMenuTwo.style.display = "none";
+      expandDropdownThree();
       dropdownMenuThree.style.display = "none";
       drop2 = true;
     }
