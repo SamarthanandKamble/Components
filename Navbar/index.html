@@ -4,7 +4,119 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Navbar</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        background-color: #5f5a5a;
+        color: #ffffff;
+      }
+      #nav-bar {
+        border: 2px dotted red;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 100vw;
+        padding: 10px 30px 10px 30px;
+      }
+      #nav-bar-items-container {
+        border: 2px solid yellow;
+        display: flex;
+      }
+      .nav-bar-items {
+        border: 2px dotted greenyellow;
+        list-style-type: none;
+        padding: 5px;
+      }
+
+      #brand-logo {
+        border: 2px solid white;
+        padding: 5px;
+      }
+      .icon-div {
+        border: 2px dotted greenyellow;
+      }
+
+      .dropdown-menu-one-container,
+      .dropdown-menu-two-container,
+      .dropdown-menu-three-container {
+        position: relative;
+      }
+      #dropdown-menu-one,
+      #dropdown-menu-two,
+      #dropdown-menu-three {
+        display: none;
+        position: absolute;
+      }
+    </style>
   </head>
-  <body></body>
+  <body>
+    <nav id="nav-bar">
+      <div id="brand-logo">
+        <span>Samarthanand Kamble </span>
+      </div>
+      <ul id="nav-bar-items-container" id="nav-bar-items-container">
+        <li class="nav-bar-items">Home<i class="fa fa-home"></i></li>
+        <li class="nav-bar-items">About</li>
+        <li class="nav-bar-items">
+          Services<i class="fa-solid fa-angle-down" id="dropdown-icon"></i>
+          <div class="dropdown-menu-one-container">
+            <ul id="dropdown-menu-one">
+              <li class="nav-bar-items">Web Dev</li>
+              <li class="nav-bar-items" id="web-design">
+                <i class="fa-solid fa-angle-left"></i>Web design
+              </li>
+              <div class="dropdown-menu-two-container">
+                <ul id="dropdown-menu-two" class="nav-bar-items-container">
+                  <li class="nav-bar-items">Amazing</li>
+                  <li class="nav-bar-items">Fabulous</li>
+                  <li class="nav-bar-items" id="checkout-more">
+                    Checkout More
+                    <i class="fa-solid fa-angle-down"></i>
+                    <div class="dropdown-menu-three-container">
+                      <ul
+                        id="dropdown-menu-three"
+                        class="nav-bar-items-container"
+                      >
+                        <li class="nav-bar-items">Task 1</li>
+                        <li class="nav-bar-items">Task 2</li>
+                        <li class="nav-bar-items">Task 3</li>
+                        <li class="nav-bar-items">Task 4</li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="nav-bar-items">Craziness</li>
+                </ul>
+              </div>
+              <li class="nav-bar-items">Designing</li>
+              <li class="nav-bar-items">Wordpress</li>
+            </ul>
+          </div>
+        </li>
+        <li class="nav-bar-items">Contact Us</li>
+      </ul>
+    </nav>
+    <main>
+      <div>
+        <h1>div 1</h1>
+      </div>
+      <div>
+        <h2>div 2</h2>
+      </div>
+      <div>
+        <h3>div 3</h3>
+      </div>
+      <div><h4>div 4</h4></div>
+    </main>
+  </body>
   <script src="/Navbar/navbar.js"></script>
 </html>
