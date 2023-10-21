@@ -18,15 +18,16 @@
         box-sizing: border-box;
         background-color: #5f5a5a;
         color: #ffffff;
+        font-family: "poppins", sans-serif;
       }
       #nav-bar {
         border: 2px dotted red;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        flex-wrap: wrap;
-        width: 100vw;
         padding: 10px 30px 10px 30px;
+        margin: 0 10px 10px 10px;
+        position: relative;
       }
       #nav-bar-items-container {
         border: 2px solid yellow;
@@ -57,66 +58,150 @@
         display: none;
         position: absolute;
       }
+      .bg-blur {
+        background: transparent;
+        backdrop-filter: blur(10px);
+        border: 2px dotted chartreuse;
+      }
+      .para-div {
+        height: 100%;
+        border: 3px solid white;
+        margin: 20px;
+        padding: 10px;
+        position: relative;
+        top: 60px;
+      }
+      .header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1;
+      }
     </style>
   </head>
   <body>
-    <nav id="nav-bar">
-      <div id="brand-logo">
-        <span>Samarthanand Kamble </span>
-      </div>
-      <ul id="nav-bar-items-container" id="nav-bar-items-container">
-        <li class="nav-bar-items">Home<i class="fa fa-home"></i></li>
-        <li class="nav-bar-items">About</li>
-        <li class="nav-bar-items">
-          Services<i class="fa-solid fa-angle-down" id="dropdown-icon"></i>
-          <div class="dropdown-menu-one-container">
-            <ul id="dropdown-menu-one">
-              <li class="nav-bar-items">Web Dev</li>
-              <li class="nav-bar-items" id="web-design">
-                <i class="fa-solid fa-angle-left"></i>Web design
-              </li>
-              <div class="dropdown-menu-two-container">
-                <ul id="dropdown-menu-two" class="nav-bar-items-container">
-                  <li class="nav-bar-items">Amazing</li>
-                  <li class="nav-bar-items">Fabulous</li>
-                  <li class="nav-bar-items" id="checkout-more">
-                    Checkout More
-                    <i class="fa-solid fa-angle-down"></i>
-                    <div class="dropdown-menu-three-container">
-                      <ul
-                        id="dropdown-menu-three"
-                        class="nav-bar-items-container"
-                      >
-                        <li class="nav-bar-items">Task 1</li>
-                        <li class="nav-bar-items">Task 2</li>
-                        <li class="nav-bar-items">Task 3</li>
-                        <li class="nav-bar-items">Task 4</li>
-                      </ul>
-                    </div>
+    <header class="header">
+      <navbar id="nav-bar" class="bg-blur">
+        <div id="brand-logo">
+          <span
+            ><b><i>Samarthanand Kamble</i></b></span
+          >
+        </div>
+        <div>
+          <ul id="nav-bar-items-container" id="nav-bar-items-container">
+            <li class="nav-bar-items">Home<i class="fa fa-home"></i></li>
+            <li class="nav-bar-items">About</li>
+            <li class="nav-bar-items">
+              Services<i class="fa-solid fa-angle-down" id="dropdown-icon"></i>
+              <div class="dropdown-menu-one-container">
+                <ul id="dropdown-menu-one">
+                  <li class="nav-bar-items">Web Dev</li>
+                  <li class="nav-bar-items" id="web-design">
+                    <i class="fa-solid fa-angle-left"></i>Web design
                   </li>
-                  <li class="nav-bar-items">Craziness</li>
+                  <div class="dropdown-menu-two-container">
+                    <ul id="dropdown-menu-two" class="nav-bar-items-container">
+                      <li class="nav-bar-items">Amazing</li>
+                      <li class="nav-bar-items">Fabulous</li>
+                      <li class="nav-bar-items" id="checkout-more">
+                        Checkout More
+                        <i class="fa-solid fa-angle-down"></i>
+                        <div class="dropdown-menu-three-container">
+                          <ul
+                            id="dropdown-menu-three"
+                            class="nav-bar-items-container"
+                          >
+                            <li class="nav-bar-items">Task 1</li>
+                            <li class="nav-bar-items">Task 2</li>
+                            <li class="nav-bar-items">Task 3</li>
+                            <li class="nav-bar-items">Task 4</li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li class="nav-bar-items">Craziness</li>
+                    </ul>
+                  </div>
+                  <li class="nav-bar-items">Designing</li>
+                  <li class="nav-bar-items">Wordpress</li>
                 </ul>
               </div>
-              <li class="nav-bar-items">Designing</li>
-              <li class="nav-bar-items">Wordpress</li>
-            </ul>
-          </div>
-        </li>
-        <li class="nav-bar-items">Contact Us</li>
-      </ul>
-    </nav>
-    <main>
-      <div>
-        <h1>div 1</h1>
-      </div>
-      <div>
-        <h2>div 2</h2>
-      </div>
-      <div>
-        <h3>div 3</h3>
-      </div>
-      <div><h4>div 4</h4></div>
-    </main>
+            </li>
+            <li class="nav-bar-items">Contact Us</li>
+          </ul>
+        </div>
+      </navbar>
+    </header>
+
+    <div class="para-div">
+      <h1>div 1</h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos
+        quasi et nulla?Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        Dignissimos quasi et nulla?Lorem ipsum dolor sit amet, consectetur
+        adipisicing elit. Dignissimos quasi et nulla?Lorem ipsum dolor sit amet,
+        consectetur adipisicing elit. Dignissimos quasi et nulla?Lorem ipsum
+        dolor sit amet, consectetur adipisicing elit. Dignissimos quasi et
+        nulla?Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        Dignissimos quasi et nulla?consectetur adipisicing elit. Dignissimos
+        quasi et nulla?Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        Dignissimos quasi et nulla?Lorem ipsum dolor sit amet, consectetur
+        adipisicing elit. Dignissimos quasi et nulla?consectetur adipisicing
+        elit. Dignissimos quasi et nulla?Lorem ipsum dolor sit amet, consectetur
+        adipisicing elit. Dignissimos quasi et nulla?Lorem ipsum dolor sit amet,
+        consectetur adipisicing elit. Dignissimos quasi et nulla?Dignissimos
+        quasi et nulla?consectetur adipisicing elit. Dignissimos quasi et
+        nulla?Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        Dignissimos quasi et nulla?Lorem ipsum dolor sit amet, consectetur
+        adipisicing elit. Dignissimos quasi et nulla?consectetur adipisicing
+        elit. Dignissimos quasi et nulla?Lorem ipsum dolor sit amet, consectetur
+        adipisicing elit. Dignissimos quasi et nulla?Lorem ipsum dolor sit amet,
+        consectetur adipisicing elit. Dignissimos quasi et nulla?Dignissimos
+        quasi et nulla?consectetur adipisicing elit. Dignissimos quasi et
+        nulla?Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        Dignissimos quasi et nulla?Lorem ipsum dolor sit amet, consectetur
+        adipisicing elit. Dignissimos quasi et nulla?consectetur adipisicing
+        elit. Dignissimos quasi et nulla?Lorem ipsum dolor sit amet, consectetur
+        adipisicing elit. Dignissimos quasi et nulla?Lorem ipsum dolor sit amet,
+        consectetur adipisicing elit. Dignissimos quasi et nulla?
+      </p>
+    </div>
+    <div class="para-div">
+      <h1>div 2</h1>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis corporis
+        id doloremque autem? Sequi eos amet dolores. Perspiciatis veritatis
+        similique excepturi velit commodi iure?
+      </p>
+    </div>
+    <div class="para-div">
+      <h1>div 3</h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, rem
+        neque? Ipsum, error eius. Quisquam a quos dolor eaque quaerat saepe
+        nihil praesentium nostrum.Lorem ipsum dolor sit amet, consectetur
+        adipisicing elit. Maiores, rem neque? Ipsum, error eius. Quisquam a quos
+        dolor eaque quaerat saepe nihil praesentium nostrum.Lorem ipsum dolor
+        sit amet, consectetur adipisicing elit. Maiores, rem neque? Ipsum, error
+        eius. Quisquam a quos dolor eaque quaerat saepe nihil praesentium
+        nostrum.Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        Maiores, rem neque? Ipsum, error eius. Quisquam a quos dolor eaque
+        quaerat saepe nihil praesentium nostrum.
+      </p>
+    </div>
+    <div class="para-div">
+      <h1>div 4</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis
+        eveniet vel maiores quia ipsam velit sint possimus non enim adipisci
+        soluta eius sequi quae delectus, distinctio, illo reiciendis iure
+        ad.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores,
+        rem neque? Ipsum, error eius. Quisquam a quos dolor eaque quaerat saepe
+        nihil praesentium nostrum.Lorem ipsum dolor sit amet, consectetur
+        adipisicing elit. Maiores, rem neque? Ipsum, error eius. Quisquam a quos
+        dolor eaque quaerat saepe nihil praesentium nostrum.
+      </p>
+    </div>
   </body>
   <script src="/Navbar/navbar.js"></script>
 </html>
