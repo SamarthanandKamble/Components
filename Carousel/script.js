@@ -1,4 +1,7 @@
-let changeImageBtn = document.querySelector(".nextBtn");
+let nextImageBtn = document.querySelector(".nextBtn");
+let prevImageBtn = document.querySelector(".prevBtn");
+let displayImage = document.querySelector("#displayImg");
+
 let currentImg = 0;
 
 const imageList = [
@@ -8,19 +11,29 @@ const imageList = [
   "/Carousel/Images/img4.jpg",
 ];
 
-function changeImage() {
-  if (currentImg < imageList.length - 1) {
-    currentImg++;
+function nextImage() {
+  if (currentImg >= imageList.length - 1) {
+    currentImg = 0;
   } else {
-    if (currentImg === imageList.length - 1) {
-      currentImg = 0;
-    } else {
-      currentImg--;
-    }
+    currentImg++;
   }
-  displayImg.setAttribute("src", imageList[currentImg]);
+  console.log(imageList[currentImg]);
+  displayImage.setAttribute("src", imageList[currentImg]);
 }
 
-changeImageBtn.addEventListener("click", () => {
-  changeImage();
+function prevImage() {
+  if (currentImg <= 0) {
+    currentImg = imageList.length - 1;
+  } else {
+    currentImg--;
+  }
+  console.log(imageList[currentImg]);``
+  displayImage.setAttribute("src", imageList[currentImg]);
+}
+
+nextImageBtn.addEventListener("click", () => {
+  nextImage();
+});
+prevImageBtn.addEventListener("click", () => {
+  prevImage();
 });
