@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        background-color: #918e8e;
+        color: #ffffff;
+      }
+      #header-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        border: 2px dotted white;
+        width: 100%;
+        margin: auto;
+        position: relative;
+      }
+      #navbar-container {
+        border: 2px solid rebeccapurple;
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        gap: 5%;
+        align-items: center;
+      }
+      #li-container {
+        display: flex;
+        justify-content: space-evenly;
+        list-style: none;
+      }
+      #menu-container {
+        width: 10%;
+        border: 3px dotted rgb(19, 33, 238);
+      }
+      #logo-container {
+        width: 10%;
+        border: 3px dotted red;
+      }
+      #input-container {
+        width: 25%;
+        border: 3px dotted yellowgreen;
+      }
+      #ul-container {
+        border: 3px dotted yellow;
+        width: 55%;
+      }
+      #ul-menu {
+        position: absolute;
+        border: 3px dotted brown;
+        margin-left: -3px;
+        top: 30px;
+        width: 27%;
+        height: 95vh;
+        display: none;
+      }
+      .a-menu {
+        display: flex;
+        text-decoration: none;
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+        gap: 8%;
+        padding: 5px 0px 0px 0px;
+        border: 2px dotted rgb(28, 236, 56);
+      }
+      .li-menu-items {
+        list-style: none;
+        border: 2px dotted whitesmoke;
+      }
+      .a-menu-icon {
+        border: 2px dotted whitesmoke;
+      }
+      .paras {
+        padding: 10px;
+        border: 3px solid greenyellow;
+        width: 100%;
+      }
+      #submenu-1-container {
+        border: 2px solid greenyellow;
+        margin: 5px;
+      }
+      .submenu-1-items {
+        list-style-type: none;
+      }
+    </style>
+  </head>
+  <body>
+    <header id="header-container">
+      <nav id="navbar-container">
+        <div id="menu-container">
+          <span id="menu-logo">
+            <i class="fa-solid fa-bars"></i>
+          </span>
+          <ul id="ul-menu">
+            <a class="a-menu">
+              <span class="a-menu-icon"
+                ><i class="fa-solid fa-house"></i>
+              </span>
+              <li class="li-menu-items">Lorem, ipsum.</li></a
+            >
+            <a class="a-menu">
+              <span class="a-menu-icon"
+                ><i class="fa-solid fa-clock"></i>
+              </span>
+              <li class="li-menu-items">Lorem, ipsum.</li></a
+            >
+            <a class="a-menu">
+              <span class="a-menu-icon"
+                ><i class="fa-solid fa-thumbs-up"></i>
+              </span>
+              <li class="li-menu-items">Lorem, ipsum.</li></a
+            >
+            <a class="a-menu">
+              <span class="a-menu-icon"
+                ><i class="fa-solid fa-arrow-up-short-wide"></i>
+              </span>
+              <li class="li-menu-items">Lorem, ipsum.</li></a
+            >
+            <hr />
+            <a class="a-menu">
+              <span class="a-menu-icon"
+                ><i class="fa-brands fa-playstation"></i>
+              </span>
+              <li class="li-menu-items">
+                Lorem, ipsum.
+                <span id="submenu-1-dropdown-icon"
+                  ><i class="fa-solid fa-caret-down"></i
+                ></span>
+                <ul id="submenu-1-container">
+                  <li class="submenu-1-items">Tasks</li>
+                  <li class="submenu-1-items">Tasks</li>
+                  <li class="submenu-1-items">Tasks</li>
+                  <li class="submenu-1-items">Tasks</li>
+                </ul>
+              </li></a
+            >
+            <a class="a-menu">
+              <span class="a-menu-icon"><i class="fa-solid fa-music"></i></span>
+              <li class="li-menu-items">Lorem, ipsum.</li></a
+            >
+            <a class="a-menu">
+              <span class="a-menu-icon"
+                ><i class="fa-solid fa-comment"></i>
+              </span>
+              <li class="li-menu-items">Lorem, ipsum.</li></a
+            >
+            <hr />
+            <a class="a-menu">
+              <span class="a-menu-icon"
+                ><i class="fa-solid fa-share"></i>
+              </span>
+              <li class="li-menu-items">Lorem, ipsum.</li>
+            </a>
+            <a class="a-menu">
+              <span class="a-menu-icon"
+                ><i class="fa-solid fa-download"></i>
+              </span>
+              <li class="li-menu-items">Lorem, ipsum.</li></a
+            >
+            <a href="" class="a-menu">
+              <span class="a-menu-icon"
+                ><i class="fa-solid fa-right-from-bracket"></i>
+              </span>
+              <li class="li-menu-items">Lorem, ipsum.</li></a
+            >
+          </ul>
+        </div>
+        <div id="logo-container">
+          <span id="logo">LOGO</span>
+        </div>
+        <div id="input-container">
+          <input type="text" id="input-box" placeholder="Please search here" />
+        </div>
+        <div id="ul-container">
+          <ul id="li-container">
+            <li class="items">About</li>
+            <li class="items">Service</li>
+            <li class="items">Contact Us</li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="paras">
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+          perferendis ipsa illo a obcaecati deserunt et rem doloremque id
+          laudantium optio deleniti ut quo unde fugiat laboriosam placeat
+          temporibus, hic dolore! A quod magnam cumque velit amet aut esse
+          veniam, consequatur ipsam quibusdam? Odit cum harum, a aliquam
+          obcaecati illum inventore minima distinctio qui fugit quia voluptatem
+          maxime, dolor vitae! Lorem ipsum dolor sit, amet consectetur
+          adipisicing elit. Soluta porro ipsam modi pariatur eveniet placeat
+          voluptates quas a eos facilis mollitia unde voluptatum natus, magnam
+          hic praesentium quam asperiores. Ab! Lorem ipsum dolor sit amet
+          consectetur, adipisicing elit. Assumenda modi blanditiis illo
+          voluptatem. Aperiam praesentium accusantium amet minima eum placeat
+          illum nobis id fugit. Nobis rerum harum qui eligendi
+          aliquid.adipisicing elit. Soluta porro ipsam modi pariatur eveniet
+          placeat voluptates quas a eos facilis mollitia unde voluptatum natus,
+          magnam hic praesentium quam asperiores. Ab! Lorem ipsum dolor sit amet
+          consectetur, adipisicing elit. Assumenda modi blanditiis illo
+          voluptatem. Aperiam praesentium accusantium amet minima eum placeat
+          illum nobis id fugit. Nobis rerum harum qui eligendi
+          aliquid.adipisicing elit. Soluta porro ipsam modi pariatur eveniet
+          placeat voluptates quas a eos facilis mollitia unde voluptatum natus,
+          magnam hic praesentium quam asperiores. Ab! Lorem ipsum dolor sit amet
+          consectetur, adipisicing elit. Assumenda modi blanditiis illo
+          voluptatem. Aperiam praesentium accusantium amet minima eum placeat
+          illum nobis id fugit. Nobis rerum harum qui eligendi
+          aliquid.adipisicing elit. Soluta porro ipsam modi pariatur eveniet
+          placeat voluptates quas a eos facilis mollitia unde voluptatum natus,
+          magnam hic praesentium quam asperiores. Ab! Lorem ipsum dolor sit amet
+          consectetur, adipisicing elit. Assumenda modi blanditiis illo
+          voluptatem. Aperiam praesentium accusantium amet minima eum placeat
+          illum nobis id fugit. Nobis rerum harum qui eligendi aliquid.
+        </p>
+      </div>
+      <div class="paras">
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+          perferendis ipsa illo a obcaecati deserunt et rem doloremque id
+          laudantium optio deleniti ut quo unde fugiat laboriosam placeat
+          temporibus, hic dolore! A quod magnam cumque velit amet aut esse
+          veniam, consequatur ipsam quibusdam? Odit cum harum, a aliquam
+          obcaecati illum inventore minima distinctio qui fugit quia voluptatem
+          maxime, dolor vitae! Lorem, ipsum dolor sit amet consectetur
+          adipisicing elit. Distinctio perferendis ipsa illo a obcaecati
+          deserunt et rem doloremque id laudantium optio deleniti ut quo unde
+          fugiat laboriosam placeat temporibus, hic dolore! A quod magnam cumque
+          velit amet aut esse veniam, consequatur ipsam quibusdam? Odit cum
+          harum, a aliquam obcaecati illum inventore minima distinctio qui fugit
+          quia voluptatem maxime, dolor vitae! Lorem, ipsum dolor sit amet
+          consectetur adipisicing elit. Distinctio perferendis ipsa illo a
+          obcaecati deserunt et rem doloremque id laudantium optio deleniti ut
+          quo unde fugiat laboriosam placeat temporibus, hic dolore! A quod
+          magnam cumque velit amet aut esse veniam, consequatur ipsam quibusdam?
+          Odit cum harum, a aliquam obcaecati illum inventore minima distinctio
+          qui fugit quia voluptatem maxime, dolor vitae! Lorem, ipsum dolor sit
+          amet consectetur adipisicing elit. Distinctio perferendis ipsa illo a
+          obcaecati deserunt et rem doloremque id laudantium optio deleniti ut
+          quo unde fugiat laboriosam placeat temporibus, hic dolore! A quod
+          magnam cumque velit amet aut esse veniam, consequatur ipsam quibusdam?
+          Odit cum harum, a aliquam obcaecati illum inventore minima distinctio
+          qui fugit quia voluptatem maxime, dolor vitae!
+        </p>
+      </div>
+      <div class="paras">
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+          perferendis ipsa illo a obcaecati deserunt et rem doloremque id
+          laudantium optio deleniti ut quo unde fugiat laboriosam placeat
+          temporibus, hic dolore! A quod magnam cumque velit amet aut esse
+          veniam, consequatur ipsam quibusdam? Odit cum harum, a aliquam
+          obcaecati illum inventore minima distinctio qui fugit quia voluptatem
+          maxime, dolor vitae! Lorem, ipsum dolor sit amet consectetur
+          adipisicing elit. Distinctio perferendis ipsa illo a obcaecati
+          deserunt et rem doloremque id laudantium optio deleniti ut quo unde
+          fugiat laboriosam placeat temporibus, hic dolore! A quod magnam cumque
+          velit amet aut esse veniam, consequatur ipsam quibusdam? Odit cum
+          harum, a aliquam obcaecati illum inventore minima distinctio qui fugit
+          quia voluptatem maxime, dolor vitae! Lorem, ipsum dolor sit amet
+          consectetur adipisicing elit. Distinctio perferendis ipsa illo a
+          obcaecati deserunt et rem doloremque id laudantium optio deleniti ut
+          quo unde fugiat laboriosam placeat temporibus, hic dolore! A quod
+          magnam cumque velit amet aut esse veniam, consequatur ipsam quibusdam?
+          Odit cum harum, a aliquam obcaecati illum inventore minima distinctio
+          qui fugit quia voluptatem maxime, dolor vitae! Lorem, ipsum dolor sit
+          amet consectetur adipisicing elit. Distinctio perferendis ipsa illo a
+          obcaecati deserunt et rem doloremque id laudantium optio deleniti ut
+          quo unde fugiat laboriosam placeat temporibus, hic dolore! A quod
+          magnam cumque velit amet aut esse veniam, consequatur ipsam quibusdam?
+          Odit cum harum, a aliquam obcaecati illum inventore minima distinctio
+          qui fugit quia voluptatem maxime, dolor vitae! Lorem, ipsum dolor sit
+          amet consectetur adipisicing elit. Distinctio perferendis ipsa illo a
+          obcaecati deserunt et rem doloremque id laudantium optio deleniti ut
+          quo unde fugiat laboriosam placeat temporibus, hic dolore! A quod
+          magnam cumque velit amet aut esse veniam, consequatur ipsam quibusdam?
+          Odit cum harum, a aliquam obcaecati illum inventore minima distinctio
+          qui fugit quia voluptatem maxime, dolor vitae!
+        </p>
+      </div>
+      <div class="paras">
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+          perferendis ipsa illo a obcaecati deserunt et rem doloremque id
+          laudantium optio deleniti ut quo unde fugiat laboriosam placeat
+          temporibus, hic dolore! A quod magnam cumque velit amet aut esse
+          veniam, consequatur ipsam quibusdam? Odit cum harum, a aliquam
+          obcaecati illum inventore minima distinctio qui fugit quia voluptatem
+          maxime, dolor vitae!
+        </p>
+      </div>
+      <div class="paras">
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+          perferendis ipsa illo a obcaecati deserunt et rem doloremque
+        </p>
+      </div>
+    </main>
+  </body>
+  <script src="/Menu/script.js"></script>
+</html>
